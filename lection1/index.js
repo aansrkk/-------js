@@ -25,7 +25,7 @@ function doStep(target) {
 
 function init(e) {
     const curField = e.target.closest(".field");
-    if (!curField.classList.contains("x", "o")) {
+    if (!curField.classList.contains("x") && !curField.classList.contains("o")) {
         console.log("here");
         doStep(e.target);
         stepCross = !stepCross;
